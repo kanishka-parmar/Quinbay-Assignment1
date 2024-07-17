@@ -1,0 +1,41 @@
+//Who AM I
+Question:-
+A bunch of Java components, in full costume, are playing a party
+game, “Who am I?” They give you a clue, and you try to guess who
+they are, based on what they say. Assume they always tell the truth
+about themselves. If they happen to say something that could be
+true for more than one of them, choose all for whom that sentence
+can apply. Fill in the blanks next to the sentence with the names of
+one or more attendees. The first one’s on us.
+Tonight’s attendees:
+Class Method Object Instance variable
+
+Solution:-
+
+I am compiled from a .java file.  --> class
+
+My instance variable values can   
+be different from my buddy’s      --> object
+values.
+
+I behave like a template.         --> class
+
+I like to do stuff.               -->method
+
+I can have many methods.          -->class
+
+I represent “state.”              -->instance variable
+
+I have behaviors.                 -->object,class
+
+I am located in objects.         -->method,instance variable
+
+I live on the heap.              --> object
+
+I am used to create object instances. -->class
+
+My state can change.              -->instance variable
+
+I declare methods.                -->class
+
+I can change at runtime.          -->object,insstance variable
