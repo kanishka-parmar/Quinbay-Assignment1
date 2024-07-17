@@ -1,0 +1,61 @@
+Quest:- Try to guess what each line of code is doing...
+Solution:-
+
+int size = 27;
+--> declare an integer variable named ‘size’ and give it the value 27
+
+String name = "Fido";
+--> declare a string variable named ‘name’ and give it the value "Fido"
+
+Dog myDog = new Dog(name, size);
+--> declare a new Dog variable named ‘myDog’ and make it use name and size
+
+x = size - 5;
+--> Subtract 5 from size and assign it to variable named x
+
+if (x < 15) myDog.bark(8);
+--> It is a condition if x is less than 15 then tell the dog to bark 8 times
+
+
+while (x > 3) {
+--> it is a loop codition wich tells to keep looping  until x is greater than 3
+
+myDog.play();
+--> This tells the dog to play
+
+}
+--> end of loop
+
+
+int[] numList = {2, 4, 6, 8};
+--> Declare an array of integers named "numList" and put 2,4,6,8 into the numList
+
+System.out.print("Hello");
+--> Print out "Hello"
+
+System.out.print("Dog: " + name);
+--> Print out "Dog: Fido"
+
+String num = "8";
+--> declare a string variable named ‘num’ and give it the value "8"
+
+int z = Integer.parseInt(num);
+--> Typecasting ie convert the string variable num into actual numerical value
+
+try {
+--> try block
+
+readTheFile("myFile.txt");
+--> read the text file named "myFile.txt"
+
+}
+--> end of try block
+
+catch (FileNotFoundException ex) {
+--> catch block if thigns dont work in try block
+
+System.out.print("File not found.");
+--> print "File Not Found"
+
+}
+--> end of catch block

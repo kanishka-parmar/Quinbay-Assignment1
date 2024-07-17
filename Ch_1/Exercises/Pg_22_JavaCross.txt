@@ -1,0 +1,71 @@
+Question:-
+Let’s give your right brain something to do. It’s your standard crossword, but almost all
+of the solution words are from Chapter 1. Just to keep you awake, we also threw in
+a few (non-Java) words from the high-tech world.
+
+Solution:-
+1. Not an integer (or _____ your boat)   
+Ans:-  Float
+
+2. Come back empty-handed
+Ans:-  void
+
+3. Open house
+Ans:-  public
+
+4. Command line invoker
+Ans:- java
+
+5. ‘Things’ holders
+Ans:-  arrays 
+
+6. Back again?
+Ans:-  loop
+
+7. Until attitudes improve
+Ans:- while
+
+8. Can’t go both ways
+Ans:-  branch
+
+9. Acronym for your laptop’s power
+Ans:-  DC
+
+10. Source code consumer
+Ans:- Compiler
+
+11. Can’t pin it down
+Ans:- Variable
+
+12. Number variable type
+Ans:- Int
+
+13. Acronym for a chip
+Ans:- IC
+
+13. Department for programmers and operations
+Ans:- IT
+
+14. Say something
+Ans:- System out print
+
+15. Shocking modifier
+Ans:- Static
+
+16. Just gotta have one
+Ans:-  Main
+
+17. How to get things done
+Ans:- Method
+
+18. Quite a crew of characters
+Ans:- String
+
+19. Announce a new class or method
+Ans:- Declare
+
+20. Bytecode consumer
+Ans:- JVM
+
+21. What’s a prompt good for?
+Ans:- Command
