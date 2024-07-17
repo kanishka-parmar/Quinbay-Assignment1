@@ -1,0 +1,46 @@
+Question:-
+The MovieTestDrive class creates objects (instances) of the Movie class and uses the dot operator (.) to set the
+instance variables to a specific value. The MovieTest-Drive class also invokes (calls) a method on one of the
+objects. Fill in the chart to the right with the values the three objects have at the end of main().
+
+class Movie {
+String title;
+String genre;
+int rating;
+void playIt() {
+System.out.println("Playing the movie");
+}
+}
+public class MovieTestDrive {
+public static void main(String[] args) {
+Movie one = new Movie();
+one.title = "Gone with the Stock";
+one.genre = "Tragic";
+one.rating = -2;
+Movie two = new Movie();
+two.title = "Lost in Cubicle Space";
+two.genre = "Comedy";
+two.rating = 5;
+two.playIt();
+Movie three = new Movie();
+three.title = "Byte Club";
+three.genre = "Tragic but ultimately uplifting";
+three.rating = 127;
+}
+}
+
+Solution:-
+Object 1
+   - title: "Gone with the Stock"
+   - genre: "Tragic"
+   - rating: -2
+
+Object 2
+   -title: "Lost in Cubicle Space"
+   -genre: "Comedy"
+   -rating: 5
+
+Object 3
+   -title: "Byte Club"
+   -genre: "Tragic but ultimately uplifting"
+   -rating: 127
