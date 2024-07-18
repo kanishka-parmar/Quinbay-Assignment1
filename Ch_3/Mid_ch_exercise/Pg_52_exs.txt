@@ -1,0 +1,23 @@
+Question:-The compiler won’t let you put a value from a large cup into
+a small one. But what about the other way—pouring a
+small cup into a big one? No problem.Based on what you know about the size
+and type of the primitive variables, see if you can figure out which of these
+are legal and which aren’t.We haven’t covered all the
+rules yet, so on some of these you’ll have to use your best
+judgment. Tip: The compiler always errs on the side of safety.
+
+From the following list, Circle the statements that would be
+legal if these lines were in a single method:
+
+1. int x = 34.5;     -->  Illegal
+2. boolean boo = x;  -->  Illegal
+3. int g = 17;       -->  Legal
+4. int y = g;        -->  Legal
+5. y = y + 10;       -->  Legal
+6. short s;          -->  Legal
+7. s = y;            -->  Illegal
+8. byte b = 3;       -->  Legal
+9. byte v = b;       -->  Legal
+10. short n = 12;    -->  Legal
+11. v = n;           -->  Illegal
+12. byte k = 128;    -->  Illegal
