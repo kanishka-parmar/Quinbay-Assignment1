@@ -1,0 +1,9 @@
+What is the current value of
+pets[2]? ___________
+Ans:- null
+
+What code would make
+pets[3] refer to one of the
+two existing Dog objects?
+_______________________
+Ans:- pets[3] = pets[0];
