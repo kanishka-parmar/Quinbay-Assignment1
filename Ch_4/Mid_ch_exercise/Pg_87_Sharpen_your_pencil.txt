@@ -1,0 +1,30 @@
+Question:-
+What’s legal?
+Given the method below, which of the method calls listed on the right
+are legal? Put a checkmark next to the ones that are legal. (Some 
+statements are there to assign values used in the method calls.)
+
+
+int calcArea(int height, int width) {
+return height * width;
+}
+
+int a = calcArea(7, 12);  --> Legal
+
+short c = 7;
+calcArea(c, 15);          --> Illegal
+
+int d = calcArea(57);     --> Illegal    
+
+calcArea(2, 3);           --> Legal
+
+long t = 42;
+int f = calcArea(t, 17);   --> Illegal
+
+int g = calcArea();        --> Illegal
+
+calcArea();                --> Illegal
+
+byte h = calcArea(4, 20);  --> Illegal
+
+int j = calcArea(2, 3, 5);  --> Illegal
