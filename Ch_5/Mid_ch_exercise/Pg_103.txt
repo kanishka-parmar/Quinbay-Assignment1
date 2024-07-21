@@ -1,0 +1,40 @@
+Test Code:-
+public class SimpleStartupTestDrive {
+public static void main(String[] args) {
+SimpleStartup dot = new SimpleStartup();
+int[] locations = {2, 3, 4};
+dot.setLocationCells(locations);
+int userGuess = 2;
+String result = dot.checkYourself(userGuess);
+String testResult = "failed";
+if (result.equals("hit")) {
+testResult = "passed";
+}
+System.out.println(testResult);
+}
+}
+
+
+Question:-
+In the next couple of pages we implement the SimpleStartup class,
+and then later we return to the test class. Looking at our test code
+above, what else should be added? What are we not testing in this
+code that we should be testing for? Write your ideas (or lines of
+code) below:
+
+Solution:-
+We are testing the basics only with only one guess we can improve by:-
+1)Multiple User Guesses
+Testing the method with multiple guesses is essential to ensure it correctly tracks the number of hits. This verifies that the method accurately returns "Kill" only after the final location cell is hit.
+
+2)Different Outcomes
+It's crucial to test for different outcomes: "Miss" when the guess is incorrect, "Hit" when it matches a location cell, and "Kill" when all cells are hit. This guarantees comprehensive functionality.
+
+3)Edge Cases
+Testing edge cases, such as guesses outside the range of the location cells, helps ensure the method can handle unexpected inputs gracefully. This robustness is critical for real-world applications.
+
+
+
+
+
+
