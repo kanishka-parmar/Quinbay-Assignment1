@@ -1,0 +1,64 @@
+Question:-
+We built the test class and the SimpleStartup class. But we still haven’t made the
+actual game. Given the code on the opposite page and the spec for the actual
+game, write in your ideas for prep code for the game class. We’ve given you a few
+lines here and there to get you started. The actual game code is on the next page,
+so don’t turn the page until you do this exercise!
+You should have somewhere between 12 and 18 lines (including the ones we wrote,
+but not including lines that have only a curly brace).
+
+The SimpleStartupGame
+needs to do this:
+1. Make the singleSimpleStartup object.
+2. Make a location for it (three consecutive cells on a single row of seven virtual cells).
+3. Ask the user for a guess.
+4. Check the guess.
+5. Repeat until the Startup is sunk.
+6. Tell the user how many guesses it took.
+
+Output:-
+%java SimpleStartupGame
+enter a number 2
+hit
+enter a number 3
+hit
+enter a number 4
+miss
+enter a number 1
+kill
+You took 4 guesses
+
+
+METHOD public static void main (String [] args)
+   DECLARE an int variable to hold the number of user guesses, named numOfGuesses
+   
+
+
+   COMPUTE a random number between 0 and 4 that will be the starting location cell position
+
+
+
+   WHILE the Startup is still alive:
+        GET user input from the command line
+
+
+*********************************************************************************************************************************************
+
+Solution:-
+METHOD public static void main (String [] args)
+   DECLARE an int variable to hold the number of user guesses, named numOfGuesses
+   Create a new SimpleStartup object
+
+   COMPUTE a random number between 0 and 4 that will be the starting location cell position
+   Make an int array with randomly generated no and then incrementing the no by 1 and 2
+   Call the setLocationCells() method on SimpleStartup object
+   Declare a boolean variablenames isAlive and set it to TRUE 
+
+
+   WHILE the Startup is still alive:
+        GET user input from the command line
+        Call the checkYourself() metod on SimpleStartup instance
+        Increment numOfGuesses
+        Check for Startup death ie if result=="kill"
+        Set isAlive to FALSE
+        Print the numberof user guesses
