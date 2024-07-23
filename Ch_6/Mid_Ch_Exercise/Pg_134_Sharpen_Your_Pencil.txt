@@ -1,0 +1,31 @@
+Question:-
+Fill in the rest of the table below by looking at the ArrayList code
+on the left and putting in what you think the code might be if it
+were using a regular array instead. We don’t expect you to get all
+of them exactly right, so just make your best guess.
+
+ArrayList                                                     Regular array
+
+ArrayList<String> myList = new
+ArrayList<String>();                                          String [] myList = new String[2];
+
+String a = "whoohoo";                                         String a = “whoohoo”;
+
+myList.add(a);                                                myList[0]=a;                                       
+
+String b = "Frog";                                            String b = “Frog”;
+
+myList.add(b);                                                myList[1]=b;
+
+int theSize = myList.size();                                  int theSize = myList.length;                                 
+
+String str = myList.get(1);                                   String str = myList[1];
+
+myList.remove(1);                                             myList[1] = null;
+
+boolean isIn = myList.contains(b);                            boolean isIn = false;
+                                                              for (String item : myList) {
+                                                              if (b.equals(item)) {
+                                                              isIn = true;
+                                                              break;
+                                                              }}
