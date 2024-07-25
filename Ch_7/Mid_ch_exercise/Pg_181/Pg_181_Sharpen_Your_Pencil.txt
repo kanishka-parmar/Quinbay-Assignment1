@@ -1,0 +1,14 @@
+Question:-
+Put a check next to the relationships that make sense.
+
+1. Oven extends Kitchen           ---> False
+2. Guitar extends Instrument      ---> True
+3. Person extends Employee        ---> False
+4. Ferrari extends Engine         ---> False
+5. FriedEgg extends Food          ---> True
+6. Beagle extends Pet             ---> True
+7. Container extends Jar          ---> False
+8. Metal extends Titanium         ---> False
+9. GratefulDead extends Band      ---> True
+10.Blonde extends Smart           ---> False
+11.Beverage extends Martini       ---> False

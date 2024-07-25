@@ -1,0 +1,44 @@
+Question:-
+Answer according to the following inheritance example:-
+public class Doctor {
+boolean worksAtHospital;
+void treatPatient() {
+// perform a checkup
+}
+}
+public class FamilyDoctor extends Doctor {
+boolean makesHouseCalls;
+void giveAdvice() {
+// give homespun advice
+}
+}
+public class Surgeon extends Doctor {
+void treatPatient() {
+// perform surgery
+}
+void makeIncision() {
+// make incision (yikes!)
+}
+}
+
+
+1.)How many instance variables does Surgeon have?
+Ans)One
+
+2.)How many instance variables does FamilyDoctor have?
+Ans)Two
+
+3.)How many methods does Doctor have?
+Ans)One
+
+4.)How many methods does Surgeon have?
+Ans)Three
+
+5.)How many methods does FamilyDoctor have?
+Ans)Two
+
+6.)Can a FamilyDoctor do treatPatient()?
+Ans)Yes 
+
+7.)Can a FamilyDoctor do makeIncision()?
+Ans)No
