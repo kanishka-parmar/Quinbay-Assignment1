@@ -1,0 +1,88 @@
+Question:-
+Some of the constructors in the SonOfBoo class will not compile. See if you can recognize which constructors are not legal. Match the 
+compiler errors with the SonOfBoo constructors that caused them, by drawing a line from the compiler error to the “bad” constructor.
+
+public class Boo {
+public Boo(int i) { }
+public Boo(String s) { }
+public Boo(String s, int i) { }
+}
+
+
+class SonOfBoo extends Boo {
+public SonOfBoo() {
+super("boo");
+}
+public SonOfBoo(int i) {
+super("Fred");
+}
+public SonOfBoo(String s) {
+super(42);
+}
+public SonOfBoo(int i, String s) {
+}
+public SonOfBoo(String a, String b, String c) {
+super(a, b);
+}
+public SonOfBoo(int i, int j) {
+super("man", j);
+}
+public SonOfBoo(int i, int x, int y) {
+super(i, "star");
+}
+}
+
+********************************************************************************************************************************************
+Solution:-
+
+public class Boo {
+    public Boo(int i) { }
+    public Boo(String s) { }
+    public Boo(String s, int i) { }
+}
+
+class SonOfBoo extends Boo {
+    public SonOfBoo() {
+        super("boo"); 
+        // Valid: Boo(String s)
+    }
+    
+    public SonOfBoo(int i) {
+        super("Fred"); 
+        // Valid: Boo(String s)
+    }
+    
+    public SonOfBoo(String s) {
+        super(42); 
+        // Valid: Boo(int i)
+    }
+    
+    public SonOfBoo(int i, String s) {
+        // This constructor does not call super explicitly compiler will call it but
+        // Error: %javac SonOfBoo.java
+                  cannot resolve symbol
+                  symbol:constructor Boo()
+    }
+    
+    public SonOfBoo(String a, String b, String c) {
+        super(a, b);
+         // Error: %javac SonOfBoo.java
+                   cannot resolve symbol
+                   symbol : constructor Boo
+                   (java.lang.String,java.lang.String)
+    }
+    
+    public SonOfBoo(int i, int j) {
+        super("man", j); 
+        // Valid: Boo(String s, int i)
+    }
+    
+    public SonOfBoo(int i, int x, int y) {
+        super(i, "star"); 
+        // Error: %javac SonOfBoo.java
+                  cannot resolve symbol
+                  symbol : constructor Boo
+                  (int,java.lang.String)
+    }
+}
+

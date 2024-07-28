@@ -1,0 +1,43 @@
+Question:-
+What’s the real output? Given the code on the left, what prints out when you run TestHippo? A or B?
+
+public class Animal {
+public Animal() {
+System.out.println("Making an Animal");
+}
+}
+public class Hippo extends Animal {
+public Hippo() {
+System.out.println("Making a Hippo");
+}
+}
+public class TestHippo {
+public static void main(String[] args) {
+System.out.println("Starting...");
+Hippo h = new Hippo();
+}
+}
+
+A:-
+% java TestHippo
+Starting...
+Making an Animal
+Making a Hippo
+
+B:-
+% java TestHippo
+Starting...
+Making a Hippo
+Making an Animal
+
+******************************************************************************************************************************************
+
+Solution:-
+A:-
+% java TestHippo
+Starting...
+Making an Animal
+Making a Hippo
+
+It will be the output because Hippo() constructor is invoked first which invokes the Animal constructor and on stack Animal constructor 
+is above the Hippo constructor in stack so Animal constructor will be completed first and then the Hippo constructor will be completed. 
