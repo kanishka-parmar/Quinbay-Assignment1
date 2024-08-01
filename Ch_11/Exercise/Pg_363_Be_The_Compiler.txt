@@ -1,0 +1,27 @@
+Question:-
+BE the Compiler, advanced
+Your job is to play compiler and determine which of these statements would compile.
+
+The signatures of the methods used in the exercise are in the boxes.
+private void takeDogs(List<Dog> dogs) { }
+private void takeAnimals(List<Animal> animals) { }
+private void takeSomeAnimals(List<? extends Animal> animals) { }
+private void takeObjects(ArrayList<Object> objects) { }
+
+Solution:-
+
+❑ takeAnimals(new ArrayList<Animal>());        ---> Compile
+❑ takeDogs(new ArrayList<Animal>());           ---> No
+❑ takeAnimals(new ArrayList<Dog>());           ---> No
+❑ takeDogs(new ArrayList<>());                 ---> Compile
+❑ List<Dog> dogs = new ArrayList<>();
+   takeDogs(dogs);                             ---> Compile
+❑ takeSomeAnimals(new ArrayList<Dog>());       ---> Compile
+❑ takeSomeAnimals(new ArrayList<>());          ---> Compile
+❑ takeSomeAnimals(new ArrayList<Animal>());    ---> Compile
+❑ List<Animal> animals = new ArrayList<>();
+   takeSomeAnimals(animals);                    ---> Compile
+❑ List<Object> objects = new ArrayList<>();
+   takeObjects(objects);                        ---> No
+❑ takeObjects(new ArrayList<Dog>());           ---> No
+❑ takeObjects(new ArrayList<Object>());        ---> Compile
