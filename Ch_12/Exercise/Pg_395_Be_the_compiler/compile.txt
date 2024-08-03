@@ -1,0 +1,30 @@
+Question:-
+BE the Compiler, advanced
+Your job is to play compiler and determine which of these statements would compile. But some of this code wasn’t covered in
+the chapter, so you need to work out the answers based on what you DID learn, applying the “rules” to these new situations. 
+The signatures of the functional interfaces are on the right, for your convenience.
+
+public interface Runnable {
+void run();
+}
+public interface Supplier<T> {
+T get();
+}
+public interface Function<T, R> {
+R apply(T t);
+}
+
+Check the box if the statement would compile.
+Solution:-
+
+❑Runnable r = () -> System.out.println("Hi!");                    ---> Compile
+❑Consumer<String> c = s -> System.out.println(s);                 ---> Compile
+❑Supplier<String> s = () -> System.out.println("Some string");    ---> No  
+❑Consumer<String> c = (s1, s2) -> System.out.println(s1 + s2);    ---> No
+❑Runnable r = (String str) -> System.out.println(str);            ---> No
+❑Function<String, Integer> f = s -> s.length();                   ---> Compile
+❑Supplier<String> s = () -> "Some string";                        ---> Compile
+❑Consumer<String> c = s -> "String" + s;                          ---> No
+❑Function<String, Integer> f = (int i) -> "i = " + i;             ---> No
+❑Supplier<String> s = s -> "Some string: " + s;                   ---> No
+❑Function<String, Integer> f = (String s) -> s.length();          ---> Compile
