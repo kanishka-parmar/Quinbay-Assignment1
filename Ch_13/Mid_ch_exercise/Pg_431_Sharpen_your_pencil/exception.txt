@@ -1,0 +1,26 @@
+Question:-
+Which of these do you think might throw an exception that the compiler should care about? These are things that you CAN’T control in your code.
+
+
+Solution:-
+
+1.)Connect to a remote server
+--> Checked exception compiler will take care
+
+2.) Access an array beyond its length
+--> Unchecked exception   
+
+3.)Display a window on the screen
+--> Unchecked exception
+
+4.) Retrieve data from a database
+--> Checked exception compiler will take care
+
+5.)See if a text file is where you think it is
+--> Checked exception compiler will take care
+
+6.) Create a new file
+--> Checked exception compiler will take care
+
+7.) Read a character from the command line
+--> Checked exception compiler will take care
