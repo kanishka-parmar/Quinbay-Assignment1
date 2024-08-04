@@ -1,0 +1,37 @@
+Question
+Your task is to create two different legal try/catch structures (similar to the
+one above left) to accurately represent the class diagram shown on the
+left. Assume ALL of these exceptions might be thrown by the method with
+the try block.
+
+Solution:-
+1.)
+
+try {
+x.doRisky();
+} catch(BoinkEx a) {
+// recovery from BoinkEx
+} catch(BiffEx b) {
+// recovery from BiffEx
+} catch(BarEx c) {
+// recovery from BarEx
+} catch(FooEx d) {
+// recovery from FooEx
+} catch(BazEx e) {
+// recovery from BazEx
+}
+ 
+
+2.)
+try {
+x.doRisky();
+catch(BiffEx b) {
+// recovery from BiffEx
+} catch(BarEx c) {
+// recovery from BarEx
+} catch(FooEx d) {
+// recovery from FooEx
+} catch(BazEx e) {
+// recovery from BazEx
+}
+
