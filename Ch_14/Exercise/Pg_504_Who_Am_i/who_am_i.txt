@@ -1,0 +1,39 @@
+Question:-
+A bunch of Java hotshots, in full costume, are playing the party game “Who
+am I?” They give you a clue, and you try to guess who they are, based on
+what they say. Assume they always tell the truth about themselves. If they
+happen to say something that could be true for more than one guy, then
+write down all for whom that sentence applies. Fill in the blanks next to the
+sentence with the names of one or more attendees.
+
+Solution:-
+
+1.)I got the whole GUI, in my hands.                  --> JFrame                               
+
+2.)Every event type has one of these.                 --> listener interface                 
+
+3.)The listener’s key method.                         --> actionPerformed()
+
+4.)This method gives JFrame its size.                 --> setsize()
+
+5.)You add code to this method but never call it.     -->paintComponent()
+
+6.)When the user actually does something, it’s an.    -->event
+
+7.)Most of these are event sources.                   -->swing components
+
+8.)I carry data back to the listener.                 --> event object
+
+9.)An addXxxListener( ) method says an object is an.  --> event source
+
+10.)How a listener signs up.                          --> addXxxListener
+
+11.)The method where all the graphics code goes.      --> paintComponent()
+
+12.)I’m typically bound to an instance.               --> inner class
+
+13.)The “g” in (Graphics g) is really of this class.  -->Graphics2D
+
+14.)The method that gets paintComponent( ) rolling.   -->repaint()
+
+15.)The package where most of the Swingers reside.    -->javax.swing
