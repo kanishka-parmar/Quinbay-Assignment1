@@ -1,0 +1,24 @@
+Question:-
+What’s Legal?
+Circle the code fragments that would compile (assuming they’re within a legal class).
+
+Solution:-
+
+1.)FileReader fileReader = new FileReader();
+   BufferedReader reader = new BufferedReader(fileReader);                ----> No
+
+2.)FileOutputStream f = new FileOutputStream("Foo.ser");
+   ObjectOutputStream os = new ObjectOutputStream(f);                     ----> Compiles
+
+3.)BufferedReader reader = new BufferedReader(new FileReader(file));
+   String line;
+   while ((line = reader.readLine()) != null) {                           ----> Compiles
+   makeCard(line);
+    } 
+
+4.)FileOutputStream f = new FileOutputStream("Game.ser");
+   ObjectInputStream is = new ObjectInputStream(f);
+   GameCharacter oneAgain = (GameCharacter) is.readObject();              ----> No
+
+
+
