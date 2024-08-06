@@ -1,0 +1,20 @@
+Question:-
+Which of these do you think are, or should be, serializable or not? Make your best guess, without looking it up in the API.
+
+Solution:-
+
+1.) Object       ---> Yes
+
+2.) String       ---> Yes 
+
+3.) File         ---> No 
+
+4.) Date         ---> Yes
+
+5.) OutputStream ---> No 
+
+6.) JFrame       ---> No 
+
+7.) Integer      ---> Yes 
+
+8.) System       ---> No 
