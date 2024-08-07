@@ -1,0 +1,23 @@
+Question:-
+Test your memory of the classes for reading and writing from a SocketChannel. Try not to look at the opposite page!
+
+==>To read text from a SocketChannel:
+
+Solution:-
+InetSocketAddress serverAddr = new InetSocketAddress("127.0.0.1", 5000);
+SocketChannel socketChannel = SocketChannel.open(serverAddr);
+Reader reader = Channels.newReader(socketChannel, StandardCharsets.UTF_8);
+BufferedReader bufferedReader = new BufferedReader(reader);
+String message = bufferedReader.readLine();
+ 
+
+==>To send text to a SocketChannel:
+
+Solution:-
+InetSocketAddress serverAddr = new InetSocketAddress("127.0.0.1", 5000);
+SocketChannel socketChannel = SocketChannel.open(serverAddr);
+Writer writer = Channels.newWriter(socketChannel, StandardCharsets.UTF_8);
+PrintWriter printWriter = new PrintWriter(writer);
+writer.println("message to send");
+writer.print("another message");
+

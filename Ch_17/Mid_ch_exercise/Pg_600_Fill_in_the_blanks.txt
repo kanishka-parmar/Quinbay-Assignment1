@@ -1,0 +1,13 @@
+Question:-
+Fill in the blanks:
+
+1.) What two pieces of information does the client need in order to make a connection with a server?
+Ans)  i) IP Address 
+     ii) TCP Port Number
+
+2.) Which TCP port numbers are reserved for “well-known services” like HTTP and FTP?
+Ans)  HTTP --> 80
+      FTP  --> 20
+
+3.) TRUE or FALSE: The range of valid TCP port numbers can be represented by a short primitive.
+Ans) FALSE
