@@ -1,0 +1,33 @@
+Question:-
+A bunch of Java and network terms, in full costume, are playing a party game, “Who am I?” They’ll give you a clue—you try to
+guess who they are based on what they say. Assume they always tell the truth about themselves. If they happen to say something
+that could be true for more than one attendee, then write down all for whom that sentence applies. Fill in the blanks next to the
+sentence with the names of one or more attendees.
+
+Tonight’s attendees:
+InetSocketAddress, SocketChannel, IP address, host name, port, Socket, ServerSocketChannel, Thread, thread pool, Executors, 
+ExecutorService, CountDownLatch, Runnable, InterruptedException, Thread.sleep()
+
+Solution:-
+
+1.)I need to be shut down or I might live forever                ---> ExecutorService
+
+2.)I let you talk to a remote machine                            ---> Socket Channel, Socket                        
+
+3.)I might be thrown by sleep() and await()                      ---> InterruptedException
+
+4.)If you want to reuse Threads, you should use me               ---> Thread pool, ExecutorService
+
+5.)You need to know me if you want to connect to another machine ---> IP Address, Host name, port
+
+6.)I’m like a separate process running on the machine            ---> Thread
+
+7.)I can give you the ExecutorService you need                   ---> Executors
+
+8.)You need one of me if you want clients to connect to me       ---> ServerSocketChannel
+
+9.)I can help you make your multithreaded code more predictable  ---> Thread.sleep(),CountDownLatch
+
+10.)I represent a job to run                                     ---> Runnable
+
+11.)I store the IP address and port of the server                ---> InetSocketAddress
